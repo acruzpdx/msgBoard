@@ -1,0 +1,39 @@
+<!-- ------------------------------------------------------------------------- -->
+<!-- AddMessageView.html - template for adding message to msgBoard             -->
+<!--                                                                           -->
+<!--  @author Agapito Cruz <agapito.cruz@gmail.com>                            -->
+<!--  @package msgBoard                                                        -->
+<!--  @copyright Agapito Cruz                                                  -->
+<!-- ------------------------------------------------------------------------- -->
+<!doctype html>
+<html>
+<head>
+    <title>setTitle()</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/test/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>setHeading()</h1>
+    </header>
+    <main>
+        <span class="error">errorMessage()</span>
+        <form action="addMessage" method="POST">
+            <span class="label">Message Heading:</span><br>
+            <input type="text" name="heading" value="messageHeading()" size="80">
+            <br>
+            <br>
+            <span class="label">Message Body:</span>
+            <br>
+            <textarea name="body"  rows="10" cols="30">messageBody()</textarea>
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Cancel">
+        </form>
+    </main>
+    <footer>
+        setCopyright()
+    </footer>
+</body>
+</html>
+

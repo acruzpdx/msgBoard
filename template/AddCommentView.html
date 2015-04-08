@@ -1,0 +1,40 @@
+<!-- ------------------------------------------------------------------------- -->
+<!-- AddCommmentView.html - template for adding comment to msgBoard            -->
+<!--                                                                           -->
+<!--  @author Agapito Cruz <agapito.cruz@gmail.com>                            -->
+<!--  @package msgBoard                                                        -->
+<!--  @copyright Agapito Cruz                                                  -->
+<!-- ------------------------------------------------------------------------- -->
+<!doctype html>
+<html>
+<head>
+    <title>setTitle()</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/test/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>setHeading()</h1>
+    </header>
+    <main>
+        <span class="error">errorMessage()</span>
+        <form action="addComment" method="POST">
+            <span class="label">Comment Heading:</span><br>
+            <input type="text" name="heading" value="commentHeading()" size="80">
+            <br>
+            <br>
+            <span class="label">Comment Body:</span>
+            <br>
+            <textarea name="body"  rows="10" cols="30">commentBody()</textarea>
+            <br>
+            <br>
+            <input type="hidden" name="msg_id" value="msgID()">
+            <input type="submit" name="submit" value="Submit">
+            <input type="submit" name="submit" value="Cancel">
+        </form>
+    </main>
+    <footer>
+        setCopyright()
+    </footer>
+</body>
+</html>
+

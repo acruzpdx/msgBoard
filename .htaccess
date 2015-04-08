@@ -1,0 +1,15 @@
+###################################################################################
+# .htaccess -  rewrite rules for msgBoard project
+# 
+# Grabs everything after the base URL and appends it to index.php as a query string
+#
+# @author Agapito Cruz <agapito.cruz@gmail.com>
+#  @package msgBoard
+#  @copyright Agapito Cruz
+###################################################################################
+RewriteEngine on
+RewriteBase /test/
+
+RewriteCond %{SCRIPT_FILENAME} !-f [NC]
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?rt=$1 [L,QSA]
