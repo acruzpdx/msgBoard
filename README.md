@@ -1,4 +1,6 @@
 # msgBoard
+
+````
 Simple message Board project to demonstrate MVC concepts using plain PHP
 
 This msgBoard project was written as an exercise in implementing the MVC design
@@ -18,7 +20,7 @@ The files in the project are:
 -msgBoard.sql - exported SQL tables for the msgBoard database.
 -index.php - starting point of msgBoad. Parses the query string received from
              the webserver following the .htaccess rules
-+class
+\class
     - App.php - class that uses passed argument to create appropriate
                 controller object
     -ControllerFactory - singleton class that maintains routing tables and
@@ -52,10 +54,10 @@ The files in the project are:
                       page.
     -Model.php - concrete class for accessing the database.
                       page.
-+lib
+\lib
     -config.php - PHP constants for accessing the database and settting up
                       file paths and URLs.
-+template
+\template
     -MainView.html - HTML template file for displaying Main Page
     -MessageView.html - HTML template file for displaying the message Page
     -AddMessageView.html - HTML template file for displaying Add Message
@@ -66,7 +68,7 @@ The files in the project are:
                       message page.
     -ResponseView.html - HTML template file for displaying User feedback
                       page.
-+css
+\css
     -style.css - very basic styling for the msgBoard pages
 
 
